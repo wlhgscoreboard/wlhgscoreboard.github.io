@@ -55,3 +55,45 @@
 /*    margin-top:-250px;*/
     text-align: center;
 }
+
+
+#spectateTeam1{
+    width:200px;
+    height:400px;
+    margin:0 auto;
+    position:absolute;
+    background: #f0f0f0;
+    left:50%;
+    top:10%;
+    margin-left:-300px;
+/*    margin-top:-250px;*/
+    text-align: center;
+}
+
+#spectateTeam2{
+    width:200px;
+    height:400px;
+    margin:0 auto;
+    position:absolute;
+    background: #f0f0f0;
+    left:50%;
+    top:10%;
+    margin-left:100px;
+/*    margin-top:-250px;*/
+    text-align: center;
+}
+
+
+#spectateCenter{
+    font-weight: bold;
+    width:200px;
+    height:400px;
+    margin:0 auto;
+    position:absolute;
+    background:#f7f7f7;
+    left:50%;
+    top:10%;
+    margin-left:-100px;
+/*    margin-top:-250px;*/
+    text-align: center;
+}

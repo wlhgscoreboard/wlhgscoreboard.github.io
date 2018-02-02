@@ -76,10 +76,13 @@ function updateClock() {
     var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
     var ampm = "AM";
     if (now.getHours() > 11) {ampm = "PM";}
-    var time = now.getHours() % 12 + ':' + now.getMinutes() + ":" + now.getSeconds() + " " + ampm;
     var day = now.getDate();
     if (day < 10) { day = "0" + day;}
-    date = [now.getFullYear(), months[now.getMonth()], day ].join('/');
+    var minute = now.getMinutes();
+    if (minute < 10){minute = "0" + minute;}
+    
+    var time = now.getHours() % 12 + ':' + minute + ":" + now.getSeconds() + " " + ampm;
+    var date = [now.getFullYear(), months[now.getMonth()], day ].join('/');
 
     // set the content of the element with the ID time to the formatted string
     document.getElementById('time').innerHTML = [date, time].join(' ');
