@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+
+<html> 
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scorekeeper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		
+        
+        
+        <div id="container" class="SetDataPage">
+            
+            <div id="team1">
+                <div class="teamName">Red</div>
+                <div class="score">21</div>
+                <div class="addGoal"><button>Add Red Goal</button></div>
+                <div class="shots">16</div>
+                <div class="addShot"><button>Add Red Shot</button></div>
+                <br>
+                <br>
+                <div id="team1SubtractGoal"><button>Subtract Red Goal</button></div>
+                <div id="team1SubtractShot"><button>Subtract Red Shot</button></div>
+
+            
+            </div>
+            
+            <div id="center">
+                <div id="time"> </div>
+<!--                <div id="dateTime" style="margin-top:20px">2018/01/30 8:37:39 AM</div>-->
+
+                <div>Goals</div>
+                <div>Shots</div>
+            
+                <div id="gameTime">240:37:39</div>
+                <div id="amountRaised">$<input></div>
+                <div id="updateAmountRaised"><button>Update Amount Raised</button></div>
+            
+            </div>
+            
+            <div id="team2">
+                <div class="teamName">White</div>
+                <div class="score">24</div>
+                <div class="addGoal"><button>Add White Goal</button></div>
+                <div class="shots">14</div>
+                <div class="addShot"><button>Add White Shot</button></div>
+                <br>
+                <br>
+                <div id="team2SubtractGoal"><button>Subtract White Goal</button></div>
+                <div id="team2SubtractShot"><button>Subtract White Shot</button></div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!--
+            <div id="container" class="SetDataPage">
+            <div id="dateTime">2018/01/30 8:37:39 AM</div>
+            
+            <div id="team1">
+                <div class="teamName">Red</div>
+                <div id="team1Score" class="score">21</div>
+
+            
+            </div>
+            
+            
+            <div id="team2" class="teamName">White</div>
+            <div id="team1AddGoal"><button>Add Red Goal</button></div>
+            <div>Goals</div>
+            <div id="team2Score2" class="score">24</div>
+            <div id="team2AddGoal"><button>Add White Goal</button></div>
+            <div id="team1Shots" class="shots">16</div>
+            <div id="team1AddShot"><button>Add Red Shot</button></div>
+            <div>Shots</div>
+            <div id="team2Shots" class="shots">14</div>
+            <div id="team2AddShot"><button>Add White Shot</button></div>
+            <div id="gameTime">240:37:39</div>
+            
+            <div id="team1SubtractGoal"><button>Subtract Red Goal</button></div>
+            <div id="team2SubtractGoal"><button>Subtract White Goal</button></div>
+            <div id="team1SubtractShot"><button>Subtract Red Shot</button></div>
+            <div id="team2SubtractShot"><button>Subtract White Shot</button></div>
+            
+            <div id="amountRaised">$<input></div>
+            <div id="updateAmountRaised"><button>Update Amount Raised</button></div>
+-->
+            
+            
+            
+            
+        </div>
+        
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyD9bVkxUWZ-MFtClj-9xHAhCmhWcQQ14o0",
+            authDomain: "hockey-49fdc.firebaseapp.com",
+            databaseURL: "https://hockey-49fdc.firebaseio.com",
+            projectId: "hockey-49fdc",
+            storageBucket: "",
+            messagingSenderId: "818302023986"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <!-- Main JS (Do not remove) -->
+        <script src="js/main.js"></script>
+
+	</body>
+</html>
+
