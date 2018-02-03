@@ -73,20 +73,38 @@ $("#team2SubtractShot").click(function()  {
 
 function updateClock() {
     var now = new Date(); // current date
-    var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+
+    // Set auxilary variables
+    var monthsNames = ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'];
     var ampm = "AM";
     if (now.getHours() > 11) {ampm = "PM";}
+    
+    // Append "0" to the front of any date/time that is less than 10
+    var month = now.getMonth();
+    if (month < 10) { month = "0" + month;}
     var day = now.getDate();
     if (day < 10) { day = "0" + day;}
     var minute = now.getMinutes();
     if (minute < 10){minute = "0" + minute;}
+    var seconds = now.getSeconds();
+    if (seconds < 10){seconds = "0" + seconds;}
     
-    var time = now.getHours() % 12 + ':' + minute + ":" + now.getSeconds() + " " + ampm;
-    var date = [now.getFullYear(), months[now.getMonth()], day ].join('/');
+    
+    var time = now.getHours() % 12 + ':' + minute + ":" + seconds + " " + ampm;
+    
+    var date = monthsNames[now.getMonth()] + " " + day + ", " + now.getFullYear();
 
+    var dateTime = [now.getFullYear(), month, day].join('/')
     // set the content of the element with the ID time to the formatted string
-    document.getElementById('time').innerHTML = [date, time].join(' ');
-
+    
+    var element = document.getElementById('date');
+    if (element != null){element.innerHTML = date;}
+    element = document.getElementById('time');
+    if (element != null){element.innerHTML = time;}
+    element = document.getElementById('dateTime');
+    if (element != null){element.innerHTML = [dateTime, time].join(' ');}
+    
+    
     // call this function again in 1000ms
     setTimeout(updateClock, 1000);
 }
