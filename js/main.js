@@ -112,3 +112,32 @@ updateClock();
 
 
 
+
+var connection = new ActiveXObject("ADODB.Connection") ;
+
+var connectionstring= "Data Source=184.168.194.55;Initial Catalog=ScoreboardDB;Integrated Security=False;User ID=ScoreboardDb;Connect Timeout=15;Encrypt=False;Packet Size=4096"
+    
+//"Data Source=<184.168.194.55>;Initial Catalog=<catalog>;User ID=<user>;Password=<password>;Provider=SQLOLEDB";
+
+//connection.Open(connectionstring);
+//var rs = new ActiveXObject("ADODB.Recordset");
+//
+//rs.Open("SELECT * FROM table", connection);
+//rs.
+//rs.MoveFirst
+//while(!rs.eof)
+//{
+//   document.write(rs.fields(1));
+//    
+//   rs.movenext;
+//}
+//
+//rs.close;
+//connection.close; 
+
+
+///Users/willrichardson/Documents/My\ Work/Coding\ stuff/Freelance/wlhgscoreboard.github.io
+//        
+//        brew reinstall -s php70-intl
+
+

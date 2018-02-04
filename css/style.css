@@ -5,7 +5,6 @@
 
 
 .teamName{
-/*    font-size: 30px;*/
     font-size: 6vw;
     font-weight: bold;
 }
@@ -17,38 +16,41 @@
 }
 
 #time{
-    font-size: 5vw;
-    font-weight: bold;
-    color:royalblue;
     position:absolute;
     left:65%;
 }
 
 #date{
-    font-size: 5vw;
-    font-weight: bold;
-    color:royalblue;
     position:absolute;
     left:5%;
 }
 
+#timeSpec {
+    font-size: 5vw;
+    font-weight: bold;
+    color:royalblue;
+}
+
+.scoreSpec{
+    font-size: 10vw;
+    font-weight: bold;
+    margin-bottom:-2vw;
+}
+
+.shotsSpec{
+    font-size: 7vw;
+    font-weight: bold;
+    margin-bottom:-2vw;
+}
+
+.teamNameSpec{
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom:-2vw;
+}
 
 
 #team1{
-/*
-    width:200px;
-    height:400px;
-    margin:0 auto;
-    position:absolute;
-    background: #f0f0f0;
-    left:50%;
-    top:10%;
-    margin-left:-300px;
-    margin-top:-250px;
-    text-align: center;
-*/
-    
-    
     position:absolute;
     background: #f0f0f0;
     left:35%;
@@ -60,20 +62,6 @@
 }
 
 #team2{
-/*
-    width:200px;
-    height:400px;
-    margin:0 auto;
-    position:absolute;
-    background: #f0f0f0;
-    left:50%;
-    top:10%;
-    margin-left:100px;
-    margin-top:-250px;
-    text-align: center;
-*/
-    
-    
     position:absolute;
     background: #f0f0f0;
     left:35%;
@@ -86,20 +74,6 @@
 
 
 #center{
-/*
-    font-weight: bold;
-    width:200px;
-    height:400px;
-    margin:0 auto;
-    position:absolute;
-    background:#f7f7f7;
-    left:50%;
-    top:10%;
-    margin-left:-100px;
-    margin-top:-250px;
-    text-align: center;
-*/
-    
     
     font-weight: bold;
     position:absolute;
@@ -112,7 +86,7 @@
 }
 
 
-#spectateTeam1{
+#team1Spec{
 
     position:absolute;
     background: #f0f0f0;
@@ -124,7 +98,7 @@
     margin-left:-35vw;
 }
 
-#spectateTeam2{
+#team2Spec{
 
     position:absolute;
     background: #f0f0f0;
@@ -137,8 +111,7 @@
 }
 
 
-#spectateCenter{
-    
+#centerSpec{
     font-weight: bold;
     position:absolute;
     background: #f7f7f7;
@@ -149,7 +122,7 @@
     text-align: center;   
 }
 
-#timeDiv{
+#timeSpec{
     font-weight: bold;
     position:absolute;
     background: #f7f7f7;
@@ -160,7 +133,7 @@
     text-align: center;   
 }
 
-#details{
+#detailsSpec{
     font-weight: bold;
     position:absolute;
     background: #f7f7f7;
